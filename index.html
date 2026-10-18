@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTA Game Hub</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #fff;
+      font-family: 'Trebuchet MS', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #111;
+      border-bottom: 2px solid #ff007f;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #ff007f;
+      text-shadow: 2px 2px 8px #00f0ff;
+    }
+    .game-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+    .game-card {
+      background: #222;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(255,0,127,0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .game-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(0,240,255,0.6);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 24px;
+      background: linear-gradient(90deg, #ff007f, #00f0ff);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      opacity: 0.85;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      border-top: 2px solid #00f0ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎮 GTA Game Hub</h1>
+    <p>Select your GTA adventure</p>
+  </header>
+
+  <section class="game-container">
+    <!-- GTA Liberty Stories -->
+    <div class="game-card">
+      <h2>GTA Liberty Stories</h2>
+      <p>Classic chaos in Liberty City.</p>
+      <a href="https://quenq.com/apps/iii-online/" class="btn" target="_blank">Play Now</a>
+    </div>
+
+    <!-- GTA Vice City OG -->
+    <div class="game-card">
+      <h2>GTA Vice City OG</h2>
+      <p>Step back into neon 80s Miami.</p>
+      <a href="https://quenq.com/apps/vice-city/" class="btn" target="_blank">Play Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <a href="https://hariommishra2026.github.io/website/" class="btn">⬅ Back to My Website</a>
+  </footer>
+</body>
+</html>
